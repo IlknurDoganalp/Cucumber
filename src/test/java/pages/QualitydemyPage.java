@@ -20,11 +20,13 @@ public class QualitydemyPage {
     @FindBy(xpath = "//input[@id='login-password']")
     public WebElement passwordKutusu;
 
+    @FindBy(linkText = "Accept")
+    public WebElement cookie;
+
     @FindBy(xpath = "//button[text()='Login']")
     public WebElement loginButonu;
 
-    @FindBy(linkText = "Accept")
-    public WebElement cookie;
+
 
     @FindBy(xpath = "//a[text()='Instructor']")
     public WebElement basariliGirisKontrolElementi;
