@@ -22,7 +22,8 @@ public class QualitydemyStepDefinitions {
     }
     @When("login butonuna basar")
     public void login_butonuna_basar() {
-        qualitydemyPage.loginButonu.click();
+        qualitydemyPage.cookie.submit();
+        qualitydemyPage.loginButonu.submit();
     }
     @Then("giris yapilamadigini test eder")
     public void giris_yapilamadigini_test_eder() {
