@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber-reports1.html",
-                "json:target/json-reports/cucumber1.json",
-                "junit:target/xml-report/cucumber1.xml"
+        plugin = {"html:target/cucumber-reports2.html",
+                "json:target/json-reports/cucumber2.json",
+                "junit:target/xml-report/cucumber2.xml"
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
@@ -17,4 +17,5 @@ import org.junit.runner.RunWith;
         dryRun = false
 )
 public class ParalelRunner2 {
+
 }
